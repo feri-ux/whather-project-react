@@ -165,7 +165,7 @@ export default function Weather() {
       <hr  align="left"  className="half-hr" />
 
       <div className="footer">
-        <a href="https://github.com/feri-ux/weather-app" target="_blank" rel="noopener">
+        <a href="https://github.com/feri-ux/whather-project-react" target="_blank" rel="noopener">
           Open-source code</a
         >
         by Asieh Kalantar
