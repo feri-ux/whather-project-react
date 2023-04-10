@@ -2,7 +2,8 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
-import 'bootstrap/dist/css/bootstrap.css'
+import { faCloudBolt } from "@fortawesome/free-solid-svg-icons";
+import 'bootstrap/dist/css/bootstrap.css';
 
 import "./Weather.css";
 
@@ -17,7 +18,7 @@ export default function Weather() {
     wind: "5"
   };
   return (
-    <div NameName="container">
+    <div className="container">
       <form>
         <div className="row">
           <div className="col-8">
@@ -110,7 +111,7 @@ export default function Weather() {
           <div className="forecast-day">Fri</div>
           <br />
           <div className="forecast-icon">
-            <i className="fa-solid fa-cloud-bolt"></i>
+          <FontAwesomeIcon icon={faCloudBolt} />
           </div>
           <div className="forecast-temperature">
             <span>25° </span>
@@ -121,7 +122,7 @@ export default function Weather() {
           <div className="forecast-day">Sut</div>
           <br />
           <div className="forecast-icon">
-            <i className="fa-solid fa-cloud-bolt"></i>
+          <FontAwesomeIcon icon={faCloudBolt} />
           </div>
           <div className="forecast-temperature">
             <span>25°</span>
@@ -132,7 +133,8 @@ export default function Weather() {
           <div className="forecast-day">Sun</div>
           <br />
           <div className="forecast-icon">
-            <i className="fa-solid fa-cloud-bolt"></i>
+          <FontAwesomeIcon icon={faCloudBolt} />
+
           </div>
           <div className="forecast-temperature">
             <span>25°</span>
@@ -143,7 +145,7 @@ export default function Weather() {
           <div className="forecast-day">Mon</div>
           <br />
           <div className="forecast-icon">
-            <i className="fa-solid fa-cloud-bolt"></i>
+          <FontAwesomeIcon icon={faCloudBolt} />
           </div>
           <div className="forecast-temperature">
             <span>25°</span>
@@ -154,7 +156,7 @@ export default function Weather() {
           <div className="forecast-day">Tue</div>
           <br />
           <div className="forecast-icon">
-            <i className="fa-solid fa-cloud-bolt"></i>
+          <FontAwesomeIcon icon={faCloudBolt} />
           </div>
           <div className="forecast-temperature">
             <span>25°</span>

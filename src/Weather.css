@@ -1,5 +1,4 @@
 body {
-    margin-top: 40px;
     background: radial-gradient(
       circle at 18.7% 37.8%,
       rgb(250, 250, 250) 0%,
@@ -11,16 +10,16 @@ body {
   
   h2 {
     position: relative;
-    left: 10px;
+    left: 50px;
   }
   
   .container {
-    max-width: 600px;
+    max-width: 650px;
     padding: 30px;
     border-radius: 10px;
     background: linear-gradient(
       112.1deg,
-      rgb(214, 215, 221) 11.4%,
+      rgb(24, 29, 54) 11.4%,
       rgb(63, 76, 119) 70.2%
     );
   }
@@ -105,6 +104,8 @@ body {
   .time {
     font-family: "Sacramento", cursive;
     font-size: 14px;
+    position: relative;
+    left: -70px;
   }
   
   .dates {
@@ -118,23 +119,35 @@ body {
     margin-top: 0;
   }
 
+  .weather-button {
+    border: 1px solid transparent;
+    background-color: #eff3f4;
+    max-width: 80px;
+    border-radius: 5px;
+    margin: 5px 17px;
+  }
+
+  .weather-button:hover {
+    background-color: #fff;
+    transition: all 200ms ease-in-out;
+    color: transparent;
+  }
 
 
   .forecast-day {
     text-align: center;
     margin-top: 10px;
-    color: #c6cfda;
-  }
-  
-  .forecast-day {
+    color:#142d4c;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     margin-bottom: 12px;
   }
   
+  
+  
   .forecast-icon {
-    color: #dcdfe2;
+    color: #142d4c;
     font-size: 38px;
     text-align: center;
   }
@@ -143,7 +156,7 @@ body {
     font-size: 14px;
     font-weight: 700;
     font-family: "Inter Tight", sans-serif;
-    color: #d3d9e0;
+    color: #142d4c;
     text-align: center;
     line-height: 40px;
   }
@@ -154,16 +167,23 @@ body {
 
   .half-hr {
     margin-bottom: 0;
+    width: 37%;
+    color:"#E4ECEF"
   }
   
   .footer {
     font-family: "Inter Tight", sans-serif;
-    color: white;
+    color: rgb(230, 221, 221);
     font-size: 12px;
     font-weight: 100;
+    text-align: left;
   }
   
   a {
     color: #ffba98;
+  }
+  
+  a:hover {
+    color: white;
   }
   
