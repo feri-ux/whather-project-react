@@ -55,7 +55,7 @@ export default function Weather() {
             </span>
           </div>
         </div>
-        <div className="col">
+        <div className="col-5">
           <div className="city-name">{weatherData.city}</div>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function Weather() {
             />
           </div>
         </div>
-        <div className="col">
+        <div className="col-5">
           <div className="extrainfo">Humidity: {weatherData.humidity}%</div>
           <div className="extrainfo">Wind: {weatherData.wind} Km/h</div>
         </div>
@@ -81,7 +81,7 @@ export default function Weather() {
         <div className="col-5">
           <h2>{weatherData.description}</h2>
         </div>
-        <div class="col">
+        <div class="col-7">
           <div class="enjoy-weather">Enjoy this beautiful day!</div>
         </div>
       </div>
@@ -94,7 +94,7 @@ export default function Weather() {
             <span id="current-time"> {weatherData.time}</span>
           </div>
         </div>
-        <div className="col">
+        <div className="col-7">
           <div className="dates">
             <FontAwesomeIcon icon={faCalendar} />
 
@@ -167,10 +167,10 @@ export default function Weather() {
       <hr  align="left"  className="half-hr" />
 
       <div className="footer">
-        <a href="https://github.com/feri-ux/whather-project-react" target="_blank" rel="noopener">
-          Open-source code</a
+        <a href="https://github.com/feri-ux/whather-project-react" target="_blank" rel="noreferrer">
+          Open-source code </a
         >
-        by Asieh Kalantar
+         by Asieh Kalantar
       </div>
     </div>
   );

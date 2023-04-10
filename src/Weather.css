@@ -10,12 +10,12 @@ body {
   
   h2 {
     position: relative;
-    left: 50px;
+    left: 12px;
   }
   
   .container {
-    max-width: 650px;
-    padding: 30px;
+    max-width: 600px;
+    padding: 25px;
     border-radius: 10px;
     background: linear-gradient(
       112.1deg,
@@ -46,7 +46,7 @@ body {
     font-size: 55px;
     font-weight: 400;
     position: relative;
-    right: -20px;
+    right: 20px;
   }
   
   .units {
@@ -72,7 +72,7 @@ body {
     font-size: 45px;
     text-transform: capitalize;
     position: relative;
-    right: -8px;
+    right: 17px;
   }
   
   .cloud-icon {
@@ -83,7 +83,7 @@ body {
   .extrainfo {
     position: relative;
     top: 20px;
-    right: -20px;
+    right: 17px;
   }
   
   .enjoy-weather {
@@ -93,12 +93,13 @@ body {
     color: #ffcab0;
     position: relative;
     top: 5px;
-    right: -70px;
+    right: -10px;
   }
   
   .weather-icon {
     position: relative;
     top: -13px;
+    left:-40px
   }
   
   .time {
@@ -112,7 +113,7 @@ body {
     font-family: "Sacramento", cursive;
     font-size: 14px;
     position: relative;
-    left: 87px;
+    left: 57px;
   }
   
   .hr {
