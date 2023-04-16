@@ -106,14 +106,16 @@ body {
     font-family: "Sacramento", cursive;
     font-size: 14px;
     position: relative;
-    left: -70px;
+    left: 5px;
+    display: flex;
   }
   
   .dates {
     font-family: "Sacramento", cursive;
     font-size: 14px;
     position: relative;
-    left: 57px;
+    left: 80px;
+    display: flex;
   }
   
   .hr {
@@ -186,5 +188,10 @@ body {
   
   a:hover {
     color: white;
+  }
+  
+  .time.current-time{
+    color: aqua;
+
   }
   
