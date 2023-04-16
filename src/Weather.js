@@ -4,7 +4,9 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faCloudBolt } from "@fortawesome/free-solid-svg-icons";
 import 'bootstrap/dist/css/bootstrap.css';
-import FormttedDate from "./FormttedDate"
+import FormattedDate from "./FormattedDate";
+import FormattedTime from "./FormattedTime";
+
 
 import "./Weather.css";
 import axios from "axios";
@@ -101,14 +103,14 @@ export default function Weather(props) {
           <div className="col-5 time">
             <div>
               <FontAwesomeIcon icon={faClock} />
-              <span id="current-time"> <FormttedDate date={weatherData.date}/></span>
+              <span id="current-time"> <FormattedTime date={weatherData.date}/></span>
             </div>
           </div>
           <div className="col-7">
             <div className="dates">
               <FontAwesomeIcon icon={faCalendar} />
   
-              <i className="fa-regular fa-calendar"><FormttedDate date={weatherData.date}/> </i>
+              <i className="fa-regular fa-calendar"><FormattedDate date={weatherData.date}/> </i>
               <span id="date"></span>
             </div>
           </div>
