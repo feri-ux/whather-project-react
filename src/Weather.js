@@ -15,7 +15,7 @@ export default function Weather(props) {
     setWeatherData({
     ready:true,
     temperature:response.data.main.temp,
-    wind: response.data.main.speed,
+    wind: response.data.wind.speed,
     description: response.data.weather[0].description,
     humidity: response.data.main.humidity,
     imgUrl: "http://openweathermap.org/img/wn/02d@2x.png",
@@ -83,7 +83,7 @@ export default function Weather(props) {
           </div>
           <div className="col-5">
             <div className="extrainfo">Humidity: {weatherData.humidity}%</div>
-            <div className="extrainfo">Wind: {weatherData.wind} Km/h</div>
+            <div className="extrainfo">Wind: {Math.round(weatherData.wind)} Km/h</div>
           </div>
         </div>
   
