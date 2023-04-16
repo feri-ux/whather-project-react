@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Weather defaultCity="tokyo"/>
+        <Weather defaultCity="tehran"/>
       </header>
     </div>
   );

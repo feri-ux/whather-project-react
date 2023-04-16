@@ -4,6 +4,7 @@ import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faCloudBolt } from "@fortawesome/free-solid-svg-icons";
 import 'bootstrap/dist/css/bootstrap.css';
+import FormttedDate from "./FormttedDate"
 
 import "./Weather.css";
 import axios from "axios";
@@ -19,8 +20,7 @@ export default function Weather(props) {
     description: response.data.weather[0].description,
     humidity: response.data.main.humidity,
     imgUrl: "http://openweathermap.org/img/wn/02d@2x.png",
-    time: "10:43",
-    date: "Saturday, March 18, 2023",
+    date: new Date(response.data.dt * 1000),
     city: response.data.name,
     });
 
@@ -101,14 +101,14 @@ export default function Weather(props) {
           <div className="col-5 time">
             <div>
               <FontAwesomeIcon icon={faClock} />
-              <span id="current-time"> {weatherData.time}</span>
+              <span id="current-time"> <FormttedDate date={weatherData.date}/></span>
             </div>
           </div>
           <div className="col-7">
             <div className="dates">
               <FontAwesomeIcon icon={faCalendar} />
   
-              <i className="fa-regular fa-calendar"> {weatherData.date}</i>
+              <i className="fa-regular fa-calendar"><FormttedDate date={weatherData.date}/> </i>
               <span id="date"></span>
             </div>
           </div>
