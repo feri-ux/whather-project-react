@@ -6,6 +6,7 @@ import { faCloudBolt } from "@fortawesome/free-solid-svg-icons";
 import 'bootstrap/dist/css/bootstrap.css';
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
+import WeatherIcon from "./WeatherIcon"
 
 export default function WeatherInfo(props){
     return(
@@ -33,12 +34,8 @@ export default function WeatherInfo(props){
   
         <div className="row">
           <div className="col-7">
-            <div>
-              <img
-                src={props.data.imgUrl}
-                alt={props.data.description}
-                className="weather-icon"
-              />
+            <div className="weather-icon">
+                <WeatherIcon code={props.data.icon} />
             </div>
           </div>
           <div className="col-5">

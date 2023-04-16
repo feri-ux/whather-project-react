@@ -82,8 +82,8 @@ body {
   
   .extrainfo {
     position: relative;
-    top: 20px;
     right: 17px;
+    bottom: 20px;
   }
   
   .enjoy-weather {
@@ -97,9 +97,11 @@ body {
   }
   
   .weather-icon {
+    height: 15px;
+    width: 15px;
     position: relative;
-    top: -13px;
-    left:-40px
+    left: 75px;
+    top: -20px
   }
   
   .time {
