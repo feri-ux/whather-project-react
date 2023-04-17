@@ -63,6 +63,8 @@ body {
     text-decoration: none;
   }
   
+  
+  
   .fahrenheit {
     color: white;
     text-decoration: none;
@@ -116,7 +118,7 @@ body {
     font-family: "Sacramento", cursive;
     font-size: 14px;
     position: relative;
-    left: 80px;
+    left: 270px;
     display: flex;
   }
   
@@ -182,18 +184,17 @@ body {
     font-size: 12px;
     font-weight: 100;
     text-align: left;
+    padding-top: 3px;
   }
-  
-  a {
+
+   a {
     color: #ffba98;
   }
   
+  
   a:hover {
-    color: white;
+    color: #ffba98;
   }
   
-  .time.current-time{
-    color: aqua;
-
-  }
+  
   

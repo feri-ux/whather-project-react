@@ -7,24 +7,14 @@ import 'bootstrap/dist/css/bootstrap.css';
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
 import WeatherIcon from "./WeatherIcon"
+import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props){
     return(
-        <div className="WeatherInfo">
-<div className="row">
+      <div className="WeatherInfo">
+        <div className="row">
           <div className="col-7">
-            <div className="temperature-large">
-              <span id="degree">{Math.round(props.data.temperature)} </span>
-              <span className="units">
-                <a href="#" className="celcius">
-                  °C{" "}
-                </a>
-                <span className="verticalLine">|</span>
-                <a href="#" className="fahrenheit">
-                  °F
-                </a>
-              </span>
-            </div>
+        <WeatherTemperature celsius={props.data.temperature}/>
           </div>
           <div className="col-5">
             <div className="city-name">{props.data.city}</div>
@@ -55,24 +45,28 @@ export default function WeatherInfo(props){
         <br />
   
         <div className="row">
-          <div className="col-6 time">
+          <div className="col-2 time">
             <div className="row">
-          <div className="col-2">
+          <div className="col-1">
               <FontAwesomeIcon icon={faClock} />
               </div>
-          <div className="col-2 ">
+          <div className="col-1 ">
               <span > <FormattedTime date={props.data.date}/></span>
             </div>
             </div>
           </div>
-          <div className="col-6">
-            <div className="dates">
-              <span><FontAwesomeIcon icon={faCalendar} /> </span>
+          <div className="col-10 dates">
+            <div className="row">
+          <div className="col-1 ">
+              <FontAwesomeIcon icon={faCalendar} />
+          </div>
+          <div className="col-10 ">
               <span><FormattedDate date={props.data.date}/></span>
             </div>
+            </div>
           </div>
-        </div>
         <hr align="left" color="#E4ECEF" className="hr" />
+        </div>
   
   
         <div className="row">
