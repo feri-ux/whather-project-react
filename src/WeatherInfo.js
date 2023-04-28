@@ -2,7 +2,6 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
-import { faCloudBolt } from "@fortawesome/free-solid-svg-icons";
 import 'bootstrap/dist/css/bootstrap.css';
 import FormattedDate from "./FormattedDate";
 import FormattedTime from "./FormattedTime";
@@ -25,7 +24,7 @@ export default function WeatherInfo(props){
         <div className="row">
           <div className="col-7">
             <div className="weather-icon">
-                <WeatherIcon code={props.data.icon} />
+                <WeatherIcon code={props.data.icon} size={75} color="#F1FFFF"/>
             </div>
           </div>
           <div className="col-5">
@@ -69,72 +68,7 @@ export default function WeatherInfo(props){
         </div>
   
   
-        <div className="row">
-          <div className="col-sm-2 weather-button">
-            <div className="forecast-day">Fri</div>
-            <br />
-            <div className="forecast-icon">
-            <FontAwesomeIcon icon={faCloudBolt} />
-            </div>
-            <div className="forecast-temperature">
-              <span>25° </span>
-              <span className="forecast-temperature-min"> 17°</span>
-            </div>
-          </div>
-          <div className="col-sm-2 weather-button">
-            <div className="forecast-day">Sut</div>
-            <br />
-            <div className="forecast-icon">
-            <FontAwesomeIcon icon={faCloudBolt} />
-            </div>
-            <div className="forecast-temperature">
-              <span>25°</span>
-              <span className="forecast-temperature-min">17°</span>
-            </div>
-          </div>
-          <div className="col-sm-2 weather-button">
-            <div className="forecast-day">Sun</div>
-            <br />
-            <div className="forecast-icon">
-            <FontAwesomeIcon icon={faCloudBolt} />
-  
-            </div>
-            <div className="forecast-temperature">
-              <span>25°</span>
-              <span className="forecast-temperature-min">17°</span>
-            </div>
-          </div>
-          <div className="col-sm-2 weather-button">
-            <div className="forecast-day">Mon</div>
-            <br />
-            <div className="forecast-icon">
-            <FontAwesomeIcon icon={faCloudBolt} />
-            </div>
-            <div className="forecast-temperature">
-              <span>25°</span>
-              <span className="forecast-temperature-min">17°</span>
-            </div>
-          </div>
-          <div className="col-sm-2 weather-button">
-            <div className="forecast-day">Tue</div>
-            <br />
-            <div className="forecast-icon">
-            <FontAwesomeIcon icon={faCloudBolt} />
-            </div>
-            <div className="forecast-temperature">
-              <span>25°</span>
-              <span className="forecast-temperature-min">17°</span>
-            </div>
-          </div>
-        </div>
-        <hr  align="left"  className="half-hr" />
-  
-        <div className="footer">
-          <a href="https://github.com/feri-ux/whather-project-react" target="_blank" rel="noreferrer">
-            Open-source code </a
-          >
-           by Asieh Kalantar
-        </div>
+       
         </div>
     )
 }
